@@ -77,12 +77,12 @@ function fakeMessage() {
   if ($('.message-input').val() != '') {
     return false;
   }
-  $('<div class="message loading new"><figure class="avatar"><img src="https://media.licdn.com/dms/image/D5603AQGgrYgocqUjgg/profile-displayphoto-shrink_200_200/0/1708325504886?e=1717632000&v=beta&t=o4Rd1MmwaoU_Q9hJ5mX2zBdn4H-hvbqxn9a0Tii7e6Y" /></figure><span></span></div>').appendTo($('.mCSB_container'));
+  $('<div class="message loading new"><figure class="avatar"><img src="./img/2.jpg" /></figure><span></span></div>').appendTo($('.mCSB_container'));
   updateScrollbar();
 
   setTimeout(function() {
     $('.message.loading').remove();
-    $('<div class="message new"><figure class="avatar"><img src="https://media.licdn.com/dms/image/D5603AQGgrYgocqUjgg/profile-displayphoto-shrink_200_200/0/1708325504886?e=1717632000&v=beta&t=o4Rd1MmwaoU_Q9hJ5mX2zBdn4H-hvbqxn9a0Tii7e6Y" /></figure>' + Fake[i] + '</div>').appendTo($('.mCSB_container')).addClass('new');
+    $('<div class="message new"><figure class="avatar"><img src="./img/1.jpg" /></figure>' + Fake[i] + '</div>').appendTo($('.mCSB_container')).addClass('new');
     setDate();
     updateScrollbar();
     i++;
